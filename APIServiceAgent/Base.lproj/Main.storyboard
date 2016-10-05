@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AI8-3L-FSj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Service View Controller-->
+        <scene sceneID="t4Q-tr-RR5">
+            <objects>
+                <viewController id="AI8-3L-FSj" customClass="TestServiceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qrd-Es-0Tc"/>
+                        <viewControllerLayoutGuide type="bottom" id="5sT-Xv-HVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cms-9t-du3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soN-92-pIH">
+                                <rect key="frame" x="528" y="285" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="done:" destination="AI8-3L-FSj" eventType="touchUpInside" id="16O-CB-17s"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGY-Ov-kG7">
+                                <rect key="frame" x="35" y="285" width="456" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="soN-92-pIH" firstAttribute="leading" secondItem="xGY-Ov-kG7" secondAttribute="trailing" constant="37" id="1HP-p3-PXL"/>
+                            <constraint firstItem="xGY-Ov-kG7" firstAttribute="centerY" secondItem="Cms-9t-du3" secondAttribute="centerY" id="KES-fp-LBN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="soN-92-pIH" secondAttribute="trailing" constant="15" id="Nsd-mj-lnE"/>
+                            <constraint firstItem="soN-92-pIH" firstAttribute="centerY" secondItem="xGY-Ov-kG7" secondAttribute="centerY" id="PaR-Is-9i0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xGY-Ov-kG7" secondAttribute="leading" constant="-15" id="bal-lU-0g2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="xGY-Ov-kG7" id="O9H-WU-03X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XyE-Y0-QbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="273"/>
+        </scene>
+    </scenes>
+</document>

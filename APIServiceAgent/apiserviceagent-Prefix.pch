@@ -1,0 +1,20 @@
+//
+//  apiserviceagent-Prefix.pch
+//  APIServiceAgent
+//
+//  Created by Tung Duong Thanh on 8/8/16.
+//  Copyright © 2016 GEM. All rights reserved.
+//
+
+#ifndef apiserviceagent_Prefix_h
+#define apiserviceagent_Prefix_h
+
+#import <CocoaLumberjack.h>
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+
+
+#endif /* apiserviceagent_Prefix_h */
